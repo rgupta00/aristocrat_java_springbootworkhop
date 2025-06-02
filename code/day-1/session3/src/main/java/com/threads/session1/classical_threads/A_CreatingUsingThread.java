@@ -1,4 +1,7 @@
 package com.threads.session1.classical_threads;
+//every worker need a job
+// worker : therad
+//job: instance of runnable
 
 class Job implements Runnable{
     @Override
@@ -15,21 +18,21 @@ class Job implements Runnable{
 }
 public class A_CreatingUsingThread {
     public static void main(String[] args) throws InterruptedException {
+        System.out.println(Thread.currentThread().getName());
         System.out.println("start");
         Job job=new Job();
-        Thread thread1 = new Thread(job,"A");
-        Thread thread2 = new Thread(job,"B");
-        Thread thread3 = new Thread(job,"C");
+        Thread t=new Thread(job,"A");
+        Thread t1=new Thread(job,"B");
+        Thread t2=new Thread(job,"C");
 
-        thread1.start();
-        thread1.start();
-        thread3.start();
-
-        thread1.join();
-        thread2.join();
-        thread3.join();
+        t.start();
+        t1.start();
+        t2.start();
+        //join
+        t.join(5000);
+        t1.join();
+        t2.join();
 
         System.out.println("end");
-
     }
 }

@@ -5,8 +5,11 @@ public class EmpApp {
         Employee employee=new FullTimeEmployee(1,"Raj",100000,"ppf");
         Employee employee2=new PartTimeEmployee(2,"Ekta",10,1000);
 
+        Freelancer freelancer=new Freelancer(3,"ABC",1000);
+
         PayementProcessing.processPayment(employee);
         PayementProcessing.processPayment(employee2);
+        PayementProcessing.processPayment(freelancer);
 
     }
 }

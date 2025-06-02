@@ -8,6 +8,7 @@ public class C_PerformanceComparisionALvsLL {
 		List<Integer> list2=new LinkedList<Integer>();
 		//time taken: 1083 ms
 		//time taken: 5 ms
+		calculatePerformance(list);
 		calculatePerformance(list2);
 	}
 

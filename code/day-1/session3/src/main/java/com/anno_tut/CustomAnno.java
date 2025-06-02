@@ -6,9 +6,9 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 import java.lang.reflect.Method;
 
-//how to create our own anntations
-@Target({ElementType.METHOD, ElementType.TYPE}) //where i can apply this annotations
-@Retention(RetentionPolicy.RUNTIME)//scope of the annotations, RUNTIME, custom : RUNTIME
+//Step 1: create the anno
+@Target(ElementType.METHOD)
+@Retention(RetentionPolicy.RUNTIME)
 @interface MyAnn{
     public String message() default "hello";
 }

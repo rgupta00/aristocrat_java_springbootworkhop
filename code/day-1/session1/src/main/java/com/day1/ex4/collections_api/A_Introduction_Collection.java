@@ -1,11 +1,6 @@
-package com.demo.session2.list;
+package com.day1.ex4.collections_api;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 
 public class A_Introduction_Collection {
 

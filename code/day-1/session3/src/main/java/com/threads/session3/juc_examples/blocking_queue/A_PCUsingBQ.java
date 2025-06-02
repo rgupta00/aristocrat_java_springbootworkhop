@@ -3,7 +3,7 @@ package com.threads.session3.juc_examples.blocking_queue;
 import java.util.Random;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
-
+//PC: wait and notify
 public class A_PCUsingBQ {
 
     private static BlockingQueue<Integer> blockingQueue=new ArrayBlockingQueue<>(10);

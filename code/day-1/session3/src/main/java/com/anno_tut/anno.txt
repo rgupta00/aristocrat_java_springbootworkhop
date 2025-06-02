@@ -1,0 +1,14 @@
+✅ 1. Core Java Annotations (from java.lang and java.lang.annotation)
+Annotation	Purpose
+@Override	Indicates that a method overrides a superclass method
+@Deprecated	Marks a method/class as obsolete
+@SuppressWarnings	Suppresses compiler warnings
+@FunctionalInterface	Marks an interface with a single abstract method
+@SafeVarargs	Suppresses heap pollution warnings for varargs methods
+
+✅ 2. Meta-Annotations (used to create custom annotations)
+Annotation	Purpose
+@Target	Specifies where an annotation can be applied (method, field, etc.)
+@Retention	Specifies how long the annotation is retained (SOURCE, CLASS, RUNTIME)
+@Inherited	Allows subclasses to inherit an annotation
+@Documented	Includes annotation in the JavaDocs

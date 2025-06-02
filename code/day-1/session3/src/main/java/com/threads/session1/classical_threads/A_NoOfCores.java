@@ -4,5 +4,6 @@ public class A_NoOfCores {
 
 	public static void main(String[] args) {
 		//how to print no of cors in my machine
+		System.out.println(Runtime.getRuntime().availableProcessors());
 	}
 }

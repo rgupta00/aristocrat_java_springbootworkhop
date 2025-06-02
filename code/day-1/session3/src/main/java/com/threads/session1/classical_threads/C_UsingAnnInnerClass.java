@@ -6,14 +6,8 @@ public class C_UsingAnnInnerClass {
 
 		//java 8: ann inner class vs lambda expression
 
-//		Runnable runnable=new Runnable() {
-//			@Override
-//			public void run() {
-//				System.out.println("job of the thread");
-//			}
-//		};
+		Runnable runnable=() -> System.out.println("job of the thread");
 
-		Runnable runnable=()-> System.out.println("job of the thread");//
 
 		Thread t=new Thread(runnable);
 		t.start();

@@ -34,12 +34,21 @@ class ExHandler implements Thread.UncaughtExceptionHandler{
 public class D_HandingExInThreads {
 
     public static void main(String[] args) {
+
+
+        Thread.setDefaultUncaughtExceptionHandler(new CommonHandler());
+           JobWithEx jobWithEx=new JobWithEx();
+           Thread t=new Thread(jobWithEx);
+           //t.setUncaughtExceptionHandler(new ExHandler());
+           t.start();
+
+
     	//how to handle exception in threads
     	//UncaughtExceptionHandler
-            Thread.setDefaultUncaughtExceptionHandler(new CommonHandler());
-        	Thread t=new Thread(new JobWithEx(),"test1");
+//            Thread.setDefaultUncaughtExceptionHandler(new CommonHandler());
+//        	Thread t=new Thread(new JobWithEx(),"test1");
            // t.setUncaughtExceptionHandler(new ExHandler());
-        	t.start();
+        //	t.start();
         	
 
     	

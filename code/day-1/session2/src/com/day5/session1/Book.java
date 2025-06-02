@@ -1,6 +1,6 @@
 package com.demo.ex1;
 
-public class Book {
+public class Book extends Object {
 	private int id;
 	private String title;
 	private String author;

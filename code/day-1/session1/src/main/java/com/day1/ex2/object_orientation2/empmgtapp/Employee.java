@@ -1,6 +1,6 @@
 package com.day1.ex2.object_orientation2.empmgtapp;
 
-abstract public class Employee {
+abstract public class Employee implements Payable {
     private int id;
     private String name;
 
@@ -8,5 +8,4 @@ abstract public class Employee {
         this.id = id;
         this.name = name;
     }
-    abstract public double getPayement();
 }

@@ -9,7 +9,7 @@ class ScheduledJob implements Runnable{
     public void run() {
         System.out.println("some ScheduledJob job");
         try{
-            Thread.sleep(10000);
+            Thread.sleep(10);
         }catch (InterruptedException e){}
     }
 }
@@ -21,8 +21,8 @@ public class C_ScheduleThreadPool {
 
        //es.schedule(new ScheduledJob(),1, TimeUnit.MINUTES);
 
-      //   es.scheduleWithFixedDelay(new ScheduledJob(),2,1, TimeUnit.SECONDS);
-        es.scheduleAtFixedRate(new ScheduledJob(),2,4, TimeUnit.SECONDS);
+         es.scheduleWithFixedDelay(new ScheduledJob(),2,1, TimeUnit.SECONDS);
+       // es.scheduleAtFixedRate(new ScheduledJob(),2,4, TimeUnit.SECONDS);
        // es.shutdown();
 
 
