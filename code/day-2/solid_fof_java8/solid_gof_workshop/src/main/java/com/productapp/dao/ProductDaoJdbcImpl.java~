@@ -1,0 +1,4 @@
+package com.productapp.dao;
+
+public class ProductDaoJdbcImpl {
+}

@@ -1,0 +1,54 @@
+package com.gof.behavioural.b_observer_pattern.classical_style;
+
+import java.util.Observable;
+import java.util.Observer;
+
+class MySubject extends Observable {
+    private String name;
+    private float price;
+
+    public MySubject(String name, float price) {
+        this.name = name;
+        this.price = price;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public float getPrice() {
+        return price;
+    }
+    public void setPrice(float price) {
+        this.price = price;
+        setChanged();
+        notifyObservers(price);
+    }
+
+}
+
+class MyObserver  implements Observer {
+    private float price;
+
+    @Override
+    public void update(Observable o, Object a) {
+
+        price=(float) a;
+
+        System.out.println("price observed : price changed to :"+price);
+    }
+
+}
+
+public class DemoObserverOldStyle {
+    public static void main(String[] args) {
+        MySubject subject=new MySubject("rice", 55);
+        MyObserver o=new MyObserver();
+
+        subject.addObserver(o);
+
+        subject.setPrice(88);
+        subject.setPrice(99);
+    }
+}

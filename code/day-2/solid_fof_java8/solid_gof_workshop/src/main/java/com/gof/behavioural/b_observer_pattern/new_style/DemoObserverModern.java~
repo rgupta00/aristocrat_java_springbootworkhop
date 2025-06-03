@@ -1,0 +1,4 @@
+package com.gof.behavioural.b_observer_pattern.new_style;
+
+public class DemoObserverModern {
+}
