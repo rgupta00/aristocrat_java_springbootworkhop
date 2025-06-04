@@ -15,7 +15,14 @@ Key topics:
 => Spring boot web application, Spring MVC arch
 =>Spring boot Monotring and Logging
 => spring boot profile
+=> spring boot caching
+=> spring boot scheduled job
 => spring boot actuator
+=> spring boot mongodb
+=> spring boot UI and Cross origin
+=> spring boot testing
+=> spring boot security
+
 
 
 Day 1: session 1:
@@ -327,6 +334,28 @@ ___________________________________________
 
 Rest 
 Controller <------------ Service layer <---------- persistance layer <------ SessionFactory
+
+
+
+
+Spring boot profile:
+-----------------------
+dev
+test
+pre-prod 
+prod
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1378,6 +1407,7 @@ Spring boot Actuator:
 
 server.port=8080
 spring.devtools.restart.enabled=true
+
 #management.endpoints.web.exposure.exclude=*
 management.endpoints.web.exposure.include=health, custom-endpoint
 
@@ -1388,6 +1418,7 @@ management.health.livenessstate.enabled=true
 management.health.readinessstate.enabled=true
 management.server.port=9090
 
+management.info.env.enabled=true
 
 #/actuator/info endpoint will show the information given here, keys
 # that are started with info

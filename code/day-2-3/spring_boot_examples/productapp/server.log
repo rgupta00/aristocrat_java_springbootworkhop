@@ -1,0 +1,118 @@
+"2025-06-04 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 11 mappings in 'requestMappingHandlerMapping'
+""2025-06-04 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2025-06-04 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2025-06-04 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+""2025-06-04 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 15 mappings in 'requestMappingHandlerMapping'
+""2025-06-04 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+""2025-06-04 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2025-06-04 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+""2025-06-04 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2025-06-04 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+""2025-06-04 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+""2025-06-04 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+""2025-06-04 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2738a1fc
+""2025-06-04 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@10664c3d
+""2025-06-04 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+""2025-06-04 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+""2025-06-04 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/productapp/swagger-ui/index.html", parameters={}
+""2025-06-04 [http-nio-8081-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+""2025-06-04 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+""2025-06-04 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/productapp/swagger-ui/index.html", parameters={}
+""2025-06-04 [http-nio-8081-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+""2025-06-04 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+""2025-06-04 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/productapp/swagger-ui/swagger-ui.css", parameters={}
+""2025-06-04 [http-nio-8081-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+""2025-06-04 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/productapp/swagger-ui/index.css", parameters={}
+""2025-06-04 [http-nio-8081-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+""2025-06-04 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/productapp/swagger-ui/swagger-initializer.js", parameters={}
+""2025-06-04 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/productapp/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
+""2025-06-04 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/productapp/swagger-ui/swagger-ui-bundle.js", parameters={}
+""2025-06-04 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+""2025-06-04 [http-nio-8081-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+""2025-06-04 [http-nio-8081-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+""2025-06-04 [http-nio-8081-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+""2025-06-04 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+""2025-06-04 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+""2025-06-04 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/productapp/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
+""2025-06-04 [http-nio-8081-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+""2025-06-04 [http-nio-8081-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+""2025-06-04 [http-nio-8081-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+""2025-06-04 [http-nio-8081-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+""2025-06-04 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/productapp/v3/api-docs/swagger-config", parameters={}
+""2025-06-04 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+""2025-06-04 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/productapp/swagger-ui/favicon-32x32.png", parameters={}
+""2025-06-04 [http-nio-8081-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+""2025-06-04 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+""2025-06-04 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json]
+""2025-06-04 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{configUrl=/productapp/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8081/productap (truncated)...]
+""2025-06-04 [http-nio-8081-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+""2025-06-04 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/productapp/v3/api-docs", parameters={}
+""2025-06-04 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+""2025-06-04 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, */*] and supported [application/json]
+""2025-06-04 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 48, 46, 49, 34, 44, 34, 105, 110, 10 (truncated)...]
+""2025-06-04 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+""2025-06-04 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/productapp/swagger-ui/swagger-ui-bundle.js", parameters={}
+""2025-06-04 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/productapp/swagger-ui/swagger-initializer.js", parameters={}
+""2025-06-04 [http-nio-8081-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+""2025-06-04 [http-nio-8081-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+""2025-06-04 [http-nio-8081-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+""2025-06-04 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+""2025-06-04 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/productapp/products/1", parameters={}
+""2025-06-04 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.productapp.controller.ProductController#getById(int)
+""2025-06-04 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8]
+""2025-06-04 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [Product(id=1, name=Laptop, price=90000.00)]
+""2025-06-04 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+""2025-06-04 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/productapp/v3/api-docs", parameters={}
+""2025-06-04 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+""2025-06-04 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json]
+""2025-06-04 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 48, 46, 49, 34, 44, 34, 105, 110, 10 (truncated)...]
+""2025-06-04 [http-nio-8081-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+""2025-06-04 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 15 mappings in 'requestMappingHandlerMapping'
+""2025-06-04 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+""2025-06-04 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2025-06-04 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+""2025-06-04 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2025-06-04 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+""2025-06-04 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+""2025-06-04 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+""2025-06-04 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@31c800a5
+""2025-06-04 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@673fdc28
+""2025-06-04 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+""2025-06-04 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+""2025-06-04 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/productapp/products", parameters={}
+""2025-06-04 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.productapp.controller.ProductExHandlerController#handle500Exception(Exception)
+""2025-06-04 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8]
+""2025-06-04 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [ErrorMessage(error=Pls try after some time, statusCode=500, timestamp=2025-06-04T11:09:00.422098600, (truncated)...]
+""2025-06-04 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
+""2025-06-04 [http-nio-8081-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 500 INTERNAL_SERVER_ERROR
+""2025-06-04 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 15 mappings in 'requestMappingHandlerMapping'
+""2025-06-04 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+""2025-06-04 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2025-06-04 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+""2025-06-04 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2025-06-04 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+""2025-06-04 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+""2025-06-04 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+""2025-06-04 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@130ad58d
+""2025-06-04 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@4cf1ec2
+""2025-06-04 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+""2025-06-04 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+""2025-06-04 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - DELETE "/productapp/products", parameters={}
+""2025-06-04 [http-nio-8081-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
+""2025-06-04 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 405 METHOD_NOT_ALLOWED
+""2025-06-04 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for DELETE "/productapp/error", parameters={}
+""2025-06-04 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+""2025-06-04 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8]
+""2025-06-04 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Wed Jun 04 11:09:43 IST 2025, status=405, error=Method Not Allowed, path=/productapp/prod (truncated)...]
+""2025-06-04 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 405
+""2025-06-04 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/productapp/products", parameters={}
+""2025-06-04 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.productapp.controller.ProductController#getAll()
+""2025-06-04 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json]
+""2025-06-04 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[Product(id=1, name=Laptop, price=90000.00), Product(id=2, name=Mobile, price=5000.00), Product(id=3 (truncated)...]
+""2025-06-04 [http-nio-8081-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+""2025-06-04 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/productapp/products", parameters={}
+""2025-06-04 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.productapp.controller.ProductController#getAll()
+""2025-06-04 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json] and supported [application/json]
+""2025-06-04 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[Product(id=1, name=Laptop, price=90000.00), Product(id=2, name=Mobile, price=5000.00), Product(id=3 (truncated)...]
+""2025-06-04 [http-nio-8081-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+"
