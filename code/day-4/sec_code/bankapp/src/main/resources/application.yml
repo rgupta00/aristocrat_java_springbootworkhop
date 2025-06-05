@@ -4,6 +4,8 @@ server:
   servlet:
     context-path: /bankapp
 spring:
+  main:
+    allow-circular-references: true
   jpa:
     show-sql: true
     properties:
