@@ -1,0 +1,111 @@
+Day-4
+--------
+* Spring rest communication
+* Docker for java dev
+* Spring security, basic auth and jwt
+* microservice foundation
+
+
+* Spring rest communication
+---------------------------
+	s1---------------------s2
+	product-service			product-client
+	
+	s2 want to talk to s1 
+	
+In Spring Boot, REST-based communication between two microservices is typically 
+achieved using one of the following approaches:
+
+
+✅ 1. Using RestTemplate (Legacy, still widely used)
+------------------------------------------
+Synchronous HTTP calls between services.
+
+Example:
+
+@Service
+public class OrderService {
+
+    private final RestTemplate restTemplate;
+
+    public OrderService(RestTemplateBuilder builder) {
+        this.restTemplate = builder.build();
+    }
+
+    public Product getProductDetails(Long productId) {
+        String url = "http://PRODUCT-SERVICE/products/" + productId;
+        return restTemplate.getForObject(url, Product.class);
+    }
+}
+Configuration:
+
+java
+Copy
+Edit
+@Bean
+public RestTemplate restTemplate() {
+    return new RestTemplate();
+}
+
+✅ 2. Using WebClient (Recommended in Spring Boot 2+)
+------------------------------------------------------
+Non-blocking, reactive client for HTTP requests.
+
+@Service
+public class OrderService {
+
+    private final WebClient webClient;
+
+    public OrderService(WebClient.Builder builder) {
+        this.webClient = builder.baseUrl("http://PRODUCT-SERVICE").build();
+    }
+
+    public Mono<Product> getProductDetails(Long productId) {
+        return webClient.get()
+                        .uri("/products/{id}", productId)
+                        .retrieve()
+                        .bodyToMono(Product.class);
+    }
+}
+Add spring-boot-starter-webflux to pom.xml
+
+✅ 3. Using OpenFeign (Declarative, best for internal service-to-service)
+-------------------------------------------------------------------
+Makes REST client look like a local interface call.
+
+
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-openfeign</artifactId>
+</dependency>
+
+Enable Feign Client:
+
+@SpringBootApplication
+@EnableFeignClients
+public class OrderServiceApplication {
+}
+Define Feign Client:
+
+java
+Copy
+Edit
+@FeignClient(name = "PRODUCT-SERVICE")
+public interface ProductClient {
+    @GetMapping("/products/{id}")
+    Product getProductById(@PathVariable("id") Long id);
+}
+✅ Service Discovery (Optional but Recommended)
+Use Eureka or Consul for dynamic service lookup.
+
+In URLs like http://PRODUCT-SERVICE/..., the name is resolved by a discovery client.
+
+Summary Table
+Method				Blocking			Ease of Use			Reactive				Best Use Case
+RestTemplate			✅ Yes			✅ Simple			❌ No					Legacy systems
+WebClient				❌ No			⚠️ Complex			✅ Yes					Reactive, high concurrency
+OpenFeign				✅ Yes			✅ Very Easy		❌ No					Declarative inter-service calls
+
+
+
+

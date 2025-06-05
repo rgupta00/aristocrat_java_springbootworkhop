@@ -1,0 +1,207 @@
+Spring boot reactive programming:
+---------------------------------
+What is Reactive Programming?
+	Reactive Programming is a programming paradigm focused on asynchronous, 
+	non-blocking, and event-driven data processing. 
+	
+	It allows systems to react to data as it becomes available — like user actions, 
+	sensor inputs, or web requests — using a stream-based approach.
+
+At its core, it is about:
+-----------------------
+	Non-blocking execution
+	Backpressure handling
+	Asynchronous data flow using streams of events
+
+Why Do We Need Reactive Programming?
+------------------------------
+In modern applications, especially microservices, we face:
+
+	High concurrency
+	Real-time user interactions
+	Network latency
+	I/O-heavy tasks (database, API calls)
+
+Traditional blocking I/O (like using RestTemplate or JDBC) consumes a thread per request, 
+which does not scale well under high load.
+
+Reactive programming solves this by:
+---------------------------------------
+	Freeing up threads for more work while waiting for I/O
+	Providing better scalability and resource efficiency
+	Handling thousands of concurrent connections with fewer resources
+
+Reactive Programming in Spring Boot (Spring WebFlux)
+-------------------------------------
+Spring Boot supports reactive programming through Spring WebFlux, introduced in Spring 5.
+
+Key Components:
+
+Mono<T>: Represents 0 or 1 item (like Optional).
+Flux<T>: Represents 0 to N items (like a List or stream).
+
+
+WebClient: Reactive alternative to RestTemplate.
+
+Netty-based non-blocking server (Reactor Netty by default).
+
+When to Use Reactive in Spring Boot?
+--------------------------------
+Use Spring WebFlux (reactive):
+
+When you expect high concurrency and I/O-bound operations (e.g., APIs hitting databases, other services).
+For event-driven, streaming, or real-time applications (e.g., chat apps, stock tickers).
+
+When you want better scalability with fewer threads (e.g., cloud-native apps).
+
+When NOT to Use It?
+----------------
+Avoid reactive:
+For CPU-intensive tasks (reactive won’t help).
+When using blocking libraries like traditional JDBC (unless you use R2DBC or a reactive DB driver).
+If your team is not familiar with reactive concepts — it has a learning curve.
+
+
+
+In Spring Boot Reactive applications (using Spring WebFlux), you have two styles to define endpoints:
+---------------------------------------------------------
+Functional Endpoints 
+Traditional (Annotation-based) Endpoints
+
+Feature				Traditional Endpoint					Functional Endpoint
+Style				Annotation-based (like Spring MVC)		Lambda/functional style
+Annotation			@RestController, @GetMapping, etc		No annotations — uses RouterFunction and HandlerFunction
+Code Structure		Declarative and OOP-friendly			More programmatic and functional
+Readability			Easier for most Java developers			Concise but less readable for beginners
+Flexibility			Standard structure						Highly flexible (like defining DSLs)
+Use Case			CRUD APIs, familiar style				Complex routing logic, lightweight handlers
+
+Traditional (Annotation-based) Endpoint
+------------------------------
+@RestController
+@RequestMapping("/products")
+public class ProductController {
+
+    @Autowired
+    private ProductService service;
+
+    @GetMapping
+    public Flux<Product> getAll() {
+        return service.getAllProducts();
+    }
+
+    @PostMapping
+    public Mono<Product> save(@RequestBody Product p) {
+        return service.saveProduct(p);
+    }
+}
+
+
+Functional Endpoint
+-----------------------
+
+@Component
+public class ProductHandler {
+
+    public Mono<ServerResponse> getAll(ServerRequest request) {
+        Flux<Product> products = ... // from service
+        return ServerResponse.ok().body(products, Product.class);
+    }
+
+    public Mono<ServerResponse> save(ServerRequest request) {
+        Mono<Product> productMono = request.bodyToMono(Product.class);
+        return productMono
+            .flatMap(p -> ... ) // save and return
+            .flatMap(saved -> ServerResponse.ok().bodyValue(saved));
+    }
+}
+
+
+Router:
+------------
+@Configuration
+public class ProductRouter {
+
+    @Bean
+    public RouterFunction<ServerResponse> route(ProductHandler handler) {
+        return RouterFunctions
+                .route(GET("/products"), handler::getAll)
+                .andRoute(POST("/products"), handler::save);
+    }
+}
+When to Use Which?
+------------------
+Scenario									Recommendation
+Familiar with Spring MVC					Use traditional
+Need clear separation of concerns			Use traditional
+Want DSL-like routing, no annotations		Use functional
+Building lightweight, composable APIs		Use functional
+Migrating existing Spring MVC app			Stick with traditional
+
+
+
+do functional have better performance?
+------------------------------------------
+In theory:
+-----------
+🔸 Functional endpoints are slightly more lightweight 
+		than annotation-based ones.
+		
+🔸 They skip the reflection and annotation processing 
+		overhead involved in @RestController, @RequestMapping, etc.
+
+In practice:
+-----------------
+	✅ The performance difference is minimal — in most real-world applications, 
+	it’s not significant enough to be the sole reason for choosing one over the other.
+
+Why Functional May Perform Slightly Better
+-------------------------------------------
+	No annotation scanning at startup
+	No method-level reflection during request handling
+	Pure functional composition using RouterFunction and HandlerFunction
+
+But...
+	➡️ Spring's annotation-based model is highly optimized, 
+	and the overhead is measured in microseconds.
+
+
+
+🧪 Benchmark Insight (Simplified)
+-----------------------------------------
+Metric							Annotation-based		Functional
+Startup time (small app) 		~5-10ms longer			Slightly faster
+Request throughput				Similar (~99.5% same)	Slight edge for functional
+Memory usage					Almost identical	Functional uses a bit less
+
+
+
+✅ When Performance Matters
+-------------------------------------
+Choose functional endpoints only if:
+
+	You’re building a high-performance, 
+	minimal API (e.g., a gateway, router, or data streaming service)
+
+	You prefer functional composition and DSL-style routing
+
+	Otherwise, for clarity, maintainability, 
+	and team familiarity, annotation-based is usually better.
+
+
+Final Recommendation
+------------------------
+Use functional endpoints if:
+
+	You want DSL-style control
+	You’re building a low-overhead, high-throughput reactive service
+	Stick with annotation-based if:
+	Your team is familiar with Spring MVC style
+	You want easier readability and structure
+
+
+
+
+
+
+
