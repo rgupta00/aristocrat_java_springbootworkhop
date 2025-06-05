@@ -519,12 +519,12 @@ step 5: push image to docker hub
 first login : docker login
 
 then run command : 
-	docker tag empapp:1.2 rgupta00/empapp:1.2
-	docker push rgupta00/empapp:1.2
+	docker tag empapp:1.2 rgupta00/productapp:1.1
+	docker push rgupta00/productapp:1.1
 
 step 6: pull image from the docker hub
 
-docker pull rgupta00/empapp:1.2
+docker pull rgupta00/productapp:1.1
 
 step 7: other person now can pull the image
 
@@ -534,7 +534,7 @@ step 7: other person now can pull the image
 	
 now pull the image and run it
 
-docker run --name empapp -p 8080:8080 rgupta00/empapp:1.2
+docker run --name productapp -p 8080:8080 rgupta00/productapp:1.1
 
 
 
@@ -574,7 +574,7 @@ Jib builds containers without using a Dockerfile or requiring a Docker installat
  https://github.com/GoogleContainerTools/jib
  
   
- 
+ <image>gcr.io/distroless/java17</image> 
 1. Add the configuration in the pom.xml
 
         <plugin>

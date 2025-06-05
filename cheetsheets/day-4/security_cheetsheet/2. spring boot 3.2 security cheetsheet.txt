@@ -98,6 +98,24 @@ public class HelloController {
 step 4: customization spring security
 ---------------------------------------
 
+
+Authentication:
+	Who are you?	401
+AUTHORIzation: 
+	I know who are you? let me decide what resouce u can access
+					403
+
+
+
+I want to use database?
+mysql + jpa to configre 
+
+
+
+
+
+
+
 @Component
 @EnableWebSecurity
 @EnableMethodSecurity
@@ -313,7 +331,7 @@ userService.addUserEntity(new UserEntity("ekta",passwordEncoder.encode("ekta123"
          List.of("ROLE_MGR","ROLE_CLERK")));
 		 
 userService.addUserEntity(new UserEntity("gun",passwordEncoder.encode("gun123"),
-         List.of("ROLE_MGR","ROLE_CLERK")));
+         List.of("ROLE_CLERK")));
 
 
 step 3 g: change security config to use user detailservice
@@ -383,7 +401,7 @@ public class HelloController {
         return "admin";
     }
 
-    @PreAuthorize("hasAuthority('ROLE_MGR') or hasAuthority('ROLE_CLERK')")
+    @PreAuthorize("hasAuthority('ROLE_MGR') or hasAuthority('ROLE_ADMIN')")
     @GetMapping(path = "mgr")
     public String mgr(){
         return "mgr";
