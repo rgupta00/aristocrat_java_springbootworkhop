@@ -582,6 +582,7 @@ Step 8: Spring boot zipkine and sluth:
 ------------------------------------------
 
 What is the need to distributed log tracing?
+---------------------------------------------
 
 complex call chains
 how you debug the problem?
@@ -849,7 +850,7 @@ enable client authentication--->auth flow --> service accounts roles (other dont
 				
 copy client secret:
 
-client secret: ptgcrpzwMshj7lne8y5Oz6jmEB3usVSO
+client secret: aRxbsi1nFD6QxqktfG6a2IxLBujxxPlh
 
 
 step 3: getting access token form auth server in client credential grant flow:

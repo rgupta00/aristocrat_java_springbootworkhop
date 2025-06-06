@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1c8e648f-ba5a-4788-8601-bc1aafab6f82" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../cheetsheets/day-5/1-spring boot ms example june 25.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../cheetsheets/day-5/1-spring boot ms example june 25.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day-4/sec_code/bankapp/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day-4/sec_code/bankapp/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day-4/sec_code/bankapp/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day-4/sec_code/bankapp/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day-4/sec_code/bankapp/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day-4/sec_code/bankapp/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day-4/sec_code/bankapp/src/main/java/com/bankapp/BankappApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day-4/sec_code/bankapp/src/main/java/com/bankapp/config/DetailService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day-4/sec_code/bankapp/src/main/java/com/bankapp/config/JwtAuthFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day-4/sec_code/bankapp/src/main/java/com/bankapp/config/JwtService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day-4/sec_code/bankapp/src/main/java/com/bankapp/config/SecConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day-4/sec_code/bankapp/src/main/java/com/bankapp/config/SecUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day-4/sec_code/bankapp/src/main/java/com/bankapp/controller/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day-4/sec_code/bankapp/src/main/java/com/bankapp/dto/AuthRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day-4/sec_code/bankapp/src/main/java/com/bankapp/repo/UserEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day-4/sec_code/bankapp/src/main/java/com/bankapp/repo/UserRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day-4/sec_code/bankapp/src/main/java/com/bankapp/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day-4/sec_code/bankapp/src/main/java/com/bankapp/service/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day-4/sec_code/bankapp/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day-4/sec_code/bankapp/src/test/java/com/bankapp/BankappApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/couponapp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/couponapp/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/couponapp/src/main/java/com/coupon/controller/CouponController.java" beforeDir="false" afterPath="$PROJECT_DIR$/couponapp/src/main/java/com/coupon/controller/CouponController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/couponapp/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/couponapp/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productapp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/productapp/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productapp/src/main/java/com/productapp/proxy/CouponServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/productapp/src/main/java/com/productapp/proxy/CouponServiceProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple example.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2y7jYwj8vG4errtdOB41aWKZ65t" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CouponappApplication.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/aristocrat_java_springbootworkhop/code/day-5/ms1-start",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.ProductappApplication">
+    <configuration name="CouponappApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.coupon.CouponappApplication" />
+      <module name="couponapp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.coupon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductappApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.productapp.ProductappApplication" />
+      <module name="productapp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.productapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ProductappApplication" />
+        <item itemvalue="Application.CouponappApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1c8e648f-ba5a-4788-8601-bc1aafab6f82" name="Changes" comment="" />
+      <created>1749192557823</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1749192557823</updated>
+    </task>
+    <servers />
+  </component>
+</project>
